@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.egg-info/
+.env
+.venv/
+venv/
+
+# Logs
+*.log
+airflow/logs/
+dbt/logs/
+
+# Dados
+data/bronze/*
+data/silver/*
+data/gold/*
+!data/.gitkeep   # mantém a pasta vazia no Git
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Docker
+*.pid
+*.sock
+
+# VSCode / IDEs
+.vscode/
+.idea/
+*.swp
+
+# dbt profiles locais (cada dev configura o seu)
+dbt/profiles.yml
